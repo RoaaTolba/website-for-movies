@@ -1,0 +1,139 @@
+:root{
+    --mainColor: #ff2c1f;
+    --textColor: #020307;
+    --bgColor:#fff;
+}
+body{
+    background: var(--textColor);
+    color: var(--bgColor);
+}
+section{
+    padding: 4.5rem 0 1.5rem;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+}
+.container{
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgb(2, 3,7,0.4);
+}
+.container img{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center ;
+    z-index: -1;
+}
+.heading{
+    max-width: 986px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--mainColor);
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bgColor);
+    display: block;
+    align-items: center;
+    column-gap: 0.5rem;
+
+}
+.logo .bx{
+    font-size: 24px;
+    color: var(--mainColor);
+}
+.movies-container{
+    max-width: 968px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.box .box-img{
+    width: 100%;
+    height: 270px;
+}
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.box .box-img img:hover{
+    transform: translateY(-10px);
+    transition: 0.2s all linear ;
+}
+.box h3{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.box span{
+    font-size: 13px;
+}
+.coming-container {
+    display: grid;
+    gap: 1rem;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.coming-container .box-img img:hover{
+    transform: trasnslateY(0);
+} 
+.coming-container .box{
+    width: 100px;
+}
+
+.footer{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5;
+}
+.social .bx{
+    background: var(--bgColor);
+    color: var(--mainColor);
+    padding: 2px;
+    font-size: 2rem;
+    border-radius: 50%;
+    /*ridge for the edge of button .. 0.4 for the color of  the ridge */
+    border: 4px ridge rgb(2, 3,7,0.4);
+}
+.social .bx:hover{
+    background: var(--mainColor);
+    color: var(--bgColor);
+    transition: 0.2 all linear;
+}
+
+.copyright{
+    padding: 20px;
+    text-align: center;
+    color: var(--bgColor);
+}
