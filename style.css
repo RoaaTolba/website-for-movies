@@ -3,6 +3,15 @@
     --textColor: #020307;
     --bgColor:#fff;
 }
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: var(--textColor);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--mainColor);
+    border-radius: 5rem;
+}
+
 body{
     background: var(--textColor);
     color: var(--bgColor);
@@ -21,6 +30,16 @@ header{
     justify-content: space-between;
     padding: 20px 100px;
     transition: 0.5s;
+}
+header.shadow{
+    background: var(--bgColor);
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+header.shadow .navbar a{
+    color: var(--textColor);
+}
+header.shadow .logo{
+    color: var(--textColor);
 }
 .container{
     width: 100%;
@@ -70,8 +89,8 @@ header{
     margin-top: 2rem;
 }
 .box .box-img{
-    width: 100%;
-    height: 270px;
+    width: 90%;
+    height: 280px;
 }
 .box .box-img img{
     width: 100%;
@@ -97,6 +116,7 @@ header{
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    height: 400px;
 }
 .coming-container .box-img img:hover{
     transform: trasnslateY(0);
@@ -136,4 +156,63 @@ header{
     padding: 20px;
     text-align: center;
     color: var(--bgColor);
+}
+
+@media (max-width: 1080px){
+    .home-text{
+        padding: auto 100px;
+    }
+}
+@media (max-width: 991px){
+    header{
+        padding: auto 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+    .home-text{
+        padding: auto 4%;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 774px){
+    header{
+        padding: 12px 4%;
+    }
+    #menu_icon{
+        display: initial;
+        color: var(--bgColor);
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bgColor);
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+        transition: 0.2s all linear;
+        text-align: center;
+    }
+    .navbar a{
+        width: 100%;
+        color: var(--textColor);
+    }
+    .navbar a:hover{
+        color: var(--mainColor);
+        border-bottom: 2px solid var(--mainColor);
+    }
+    /* .navbar a::after{
+        display: none;
+    } */
+    /* .navbar.active{
+        top: 100%;
+    }
+} */
+
 }

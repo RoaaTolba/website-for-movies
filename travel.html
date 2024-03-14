@@ -1,0 +1,90 @@
+<!-- habiba section -->
+
+<html>
+  <head>
+<link rel="stylesheet" href="travel.css">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">  
+  <!-- books icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+  <body>
+    <!-- navbar -->
+    <header class="header">
+      <a href="#" class="logo">
+        <i class='bx bxs-movie'></i> Movies
+      </a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <!-- menu -->
+      <ul class="navbar">
+        <li><a href="#home" class="home_active">Home</a></li>
+        <li><a href="#Movies">Movies</a></li>
+        <li><a href="#Coming">Coming</a></li>
+        <li><a href="#NewsLetter">NewsLetter</a></li>
+
+      </ul>
+      <a href="#" class="btn">Sign in</a>
+
+    </header>
+    <!-- home -->
+    <section class="home swiper" id="home">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide container">
+          <img src="img/home1.jpg">
+          <div class="home-text">
+            <span>Marvel univers</span>
+            <h1> Venom:let there <br> be carnage</h1>
+            <a href="#" class="btn" > Book Now</a>
+            <a href="#" class="play" ><box-icon name='play'></box-icon></a>
+               
+          </div>
+        
+        </div>
+        <!-- box2 -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide container">
+            <img src="img/home2.jpg">
+            <div class="home-text">
+              <span>Marvel univers</span>
+              <h1> Optemis Fowl <br> be carnage</h1>
+              <a href="#" class="btn" > Book Now</a>
+              <a href="#" class="play" ><box-icon name='play'></box-icon></a>
+                 
+            </div>
+          
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+              <img src="img/home3.jpg">
+              <div class="home-text">
+                <span>Marvel univers</span>
+                <h1> spider man <br> far from home</h1>
+                <a href="#" class="btn" > Book Now</a>
+                <a href="#" class="play" ><box-icon name='play'></box-icon></a>
+                   
+              </div>
+            
+            </div>
+        
+       </div>
+        <!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+    </section>
+    <!-- news letter -->
+    <section class="newsletter" id="newsletter">
+      <h2>Subscribe To Get <br>Newsletter</h2>
+      <form action="">
+        <input class="email" type="email" placeholder="Enter the Email... " required>
+        <input type="submit" value="subscribe" class="btn">
+
+      </form>
+    </section>
+  	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <!-- link to custome js  -->
+ <script src="project.js"></script>
+</body>
+</html>
